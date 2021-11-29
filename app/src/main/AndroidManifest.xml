@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantoterapiaApp">
         <activity
+            android:name=".AdicionarPlantaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConhecaProjetoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SobreNosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CriarPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlantaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
