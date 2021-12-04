@@ -2,9 +2,10 @@ package com.example.plantoterapiaapp;
 
 import android.net.Uri;
 
-public class AdicionarPlantaActivityViewModel {
-    //Tipo uma url, porém se trata de um endereço de um arquivo que está no celular(local)
-    Uri selectedPhotoLocation = null; //o endereço da foto é retornado por um uri
+import androidx.lifecycle.ViewModel;
+
+public class AdicionarPlantaActivityViewModel extends ViewModel {
+    Uri selectedPhotoLocation = null;
 
     public Uri getSelectedPhotoLocation() {
         return selectedPhotoLocation;

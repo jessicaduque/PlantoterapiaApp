@@ -21,16 +21,13 @@ public class AdicionarPlantaActivity extends AppCompatActivity {
     //Declara um valor inteiro estático para o requerimento da imagem
     static int PHOTO_PICKER_REQUEST = 1;
 
-    static String LOG_TAG_INFO = "Ciclo de Vida NewItemActivity";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_planta);
 
-        Log.i(LOG_TAG_INFO, "Método onCreate foi chamado");
-
         AdicionarPlantaActivityViewModel vm = new ViewModelProvider(this).get(AdicionarPlantaActivityViewModel.class);
+
         Uri selectedPhotoLocation = vm.getSelectedPhotoLocation();
         if(selectedPhotoLocation != null){
             ImageView imvPhotoPreview = findViewById(R.id.imvPhotoPreview);
@@ -105,36 +102,30 @@ public class AdicionarPlantaActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i(LOG_TAG_INFO, "Método onStart foi chamado");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.i(LOG_TAG_INFO, "Método onRestart foi chamado");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i(LOG_TAG_INFO, "Método onResume foi chamado");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.i(LOG_TAG_INFO, "Método onPause foi chamado");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i(LOG_TAG_INFO, "Método onStop foi chamado");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i(LOG_TAG_INFO, "Método onDestroy foi chamado");
     }
 }
