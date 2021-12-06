@@ -12,12 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 
-public class MyAdapter extends RecyclerView.Adapter {
+public class PlantasMyAdapter extends RecyclerView.Adapter {
     //Responsável por construir e preencher a lista
     MainActivity mainActivity;
     List<MyItem> itens;
 
-    public MyAdapter(MainActivity mainActivity, List<MyItem> itens){
+    public PlantasMyAdapter(MainActivity mainActivity, List<MyItem> itens){
         this.mainActivity = mainActivity;
         this.itens = itens;
     }
@@ -29,7 +29,7 @@ public class MyAdapter extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mainActivity);
         //Constroi uma view baseada em um arquivo de regra (item_list.xml)
-        View v = inflater.inflate(R.layout.item_list, parent, false);
+        View v = inflater.inflate(R.layout.plantas_list, parent, false);
 
         return new MyViewHolder(v);
     }
@@ -38,13 +38,13 @@ public class MyAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         MyItem myItem = itens.get(position);
         View v = holder.itemView;
-        ImageView imvPhoto = v.findViewById(R.id.imvPhoto);
+        ImageView imvPhoto = v.findViewById(R.id.imvEstruturaQuimicaFoto);
         imvPhoto.setImageBitmap(myItem.photo);
 
-        TextView tvTitle = v.findViewById(R.id.tvTitle);
+        TextView tvTitle = v.findViewById(R.id.tvEstruturaQuimicaTitulo);
         tvTitle.setText(myItem.title);
 
-        TextView tvDescription = v.findViewById(R.id.tvDescription);
+        TextView tvDescription = v.findViewById(R.id.tvEstruturaQuimicaDescricao);
         tvDescription.setText(myItem.description);
 
     }

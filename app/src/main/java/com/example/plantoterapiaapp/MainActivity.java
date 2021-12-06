@@ -2,7 +2,6 @@ package com.example.plantoterapiaapp;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,28 +11,27 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     static int NEW_ITEM_REQUEST = 1; // Define um valor inteiro
 
-    MyAdapter myAdapter;
+    PlantasMyAdapter myAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton fabAddItem = findViewById(R.id.fabAddNewItem); // Define um floatingactionbutton da interface através de seu id
-        fabAddItem.setOnClickListener(new View.OnClickListener() { // Define o que ocorre ao clicar no botão definido
+        FloatingActionButton fabAdicionarPlantA = findViewById(R.id.fabCriarPost); // Define um floatingactionbutton da interface através de seu id
+
+        fabAdicionarPlanta.setOnClickListener(new View.OnClickListener() { // Define o que ocorre ao clicar no botão definido
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, AdicionarPlantaActivity.class); // Cria uma intenção onde o usuário vai do MainActivity até o NewItemActivity
@@ -45,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
         List<MyItem> itens = vm.getItens(); // Pega a lista de itens no viewmodel recebido
 
-        myAdapter = new MyAdapter(this, itens); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
+        myAdapter = new PlantasMyAdapter(this, itens); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
 
-        RecyclerView rvItens = findViewById(R.id.rvItens); // Define um recyclerview da interface através de seu id
+        RecyclerView rvItens = findViewById(R.id.rvReceitas); // Define um recyclerview da interface através de seu id
         rvItens.setHasFixedSize(true); // Define que cada item da lista terá um tamanho igual (é algo que aumenta a velocidade)
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this); // Cria um tipo de layout de recyclerview, nesse caso linear
