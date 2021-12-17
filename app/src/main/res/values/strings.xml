@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Plantoterapia App</string>
-    <string name="str_hint_titulo">Título</string>
-    <string name="str_hint_descricao">Descrição</string>
-    <string name="str_adicionar_item">Adicionar Item</string>
-</resources>
