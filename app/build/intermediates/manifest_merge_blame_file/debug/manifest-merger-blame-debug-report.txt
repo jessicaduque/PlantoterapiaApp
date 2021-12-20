@@ -1,0 +1,120 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.plantoterapiaapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:6:5-47:19
+12        android:allowBackup="true"
+12-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\Jessi\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:8:9-43
+16        android:label="@string/app_name"
+16-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:9:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:10:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:11:9-35
+19        android:theme="@style/Theme.PlantoterapiaApp" >
+19-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:12:9-54
+20        <activity
+20-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:13:9-15:40
+21            android:name="com.example.plantoterapiaapp.AdicionarPlantaActivity"
+21-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:14:13-52
+22            android:exported="false" />
+22-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:15:13-37
+23        <activity
+23-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:16:9-18:40
+24            android:name="com.example.plantoterapiaapp.ConhecaProjetoActivity"
+24-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:17:13-51
+25            android:exported="false" />
+25-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:18:13-37
+26        <activity
+26-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:19:9-21:40
+27            android:name="com.example.plantoterapiaapp.SobreNosActivity"
+27-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:20:13-45
+28            android:exported="false" />
+28-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:21:13-37
+29        <activity
+29-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:22:9-24:40
+30            android:name="com.example.plantoterapiaapp.CriarPostActivity"
+30-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:23:13-46
+31            android:exported="false" />
+31-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:24:13-37
+32        <activity
+32-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:25:9-27:40
+33            android:name="com.example.plantoterapiaapp.PlantaActivity"
+33-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:26:13-43
+34            android:exported="false" />
+34-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:27:13-37
+35        <activity
+35-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:28:9-30:40
+36            android:name="com.example.plantoterapiaapp.CadastroActivity"
+36-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:29:13-45
+37            android:exported="false" />
+37-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:30:13-37
+38        <activity
+38-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:31:9-33:40
+39            android:name="com.example.plantoterapiaapp.LoginActivity"
+39-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:32:13-42
+40            android:exported="false" />
+40-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:33:13-37
+41        <activity
+41-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:34:9-42:20
+42            android:name="com.example.plantoterapiaapp.MainActivity"
+42-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:35:13-41
+43            android:exported="true" >
+43-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:36:13-36
+44            <intent-filter>
+44-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:37:13-41:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:38:17-69
+45-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:38:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:40:17-77
+47-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:40:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <meta-data
+51-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:44:9-46:57
+52            android:name="preloaded_fonts"
+52-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:45:13-43
+53            android:resource="@array/preloaded_fonts" />
+53-->C:\Users\Jessi\Git\PlantoterapiaApp\app\src\main\AndroidManifest.xml:46:13-54
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Jessi\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Jessi\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+57            android:authorities="com.example.plantoterapiaapp.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Jessi\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Jessi\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Jessi\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Jessi\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Jessi\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Jessi\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Jessi\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Jessi\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+65        </provider>
+66    </application>
+67
+68</manifest>

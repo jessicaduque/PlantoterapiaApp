@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Plantoterapia App</string>
+    <string name="str_hint_titulo">Título</string>
+    <string name="str_hint_descricao">Descrição</string>
+    <string name="str_adicionar_item">Adicionar Item</string>
+    <string name="str_text_conheca_description">Este sistema web é um projeto em conjunto com a professora de Química do IFES Serra, Nauvia.  Tem como objetivo democratizar o acesso ao conhecimento acerca das propriedades das plantas e seus diversos usos, incluindo presentes na horta do IFES</string>
+    <string name="str_text_conheca_livro">Livro Química Orgânica - Professora Nauvia</string>
+    <string name="str_sobre_jessica">Jessica Nogueira Duque é estudante do IFES Campus Serra, possui por volta dos 17 anos e é uma das desenvolvedoras desse projeto.</string>
+    <string name="str_sobre_amanda">Amanda de Góes Pires é estudante do IFES Campus Serra, possui por volta dos 18 anos e é uma das desenvolvedoras desse projeto.</string>
+    <string name="str_sobre_sophia">Sophia Caetano Marques Souza é estudante do IFES Campus Serra, possui por volta dos 18 anos e é uma das desenvolvedoras desse projeto.</string>
+    <string name="str_sobre_nauvia">Nauvia Maria Cancelieri é professora de química no IFES Campus Serra e colaboradora do projeto.</string>
+</resources>

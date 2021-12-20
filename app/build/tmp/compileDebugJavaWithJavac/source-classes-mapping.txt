@@ -1,0 +1,44 @@
+com/example/plantoterapiaapp/CriarPostActivity.java
+ com.example.plantoterapiaapp.CriarPostActivity
+com/example/plantoterapiaapp/LoginActivity.java
+ com.example.plantoterapiaapp.LoginActivity
+com/example/plantoterapiaapp/PlantaActivity.java
+ com.example.plantoterapiaapp.PlantaActivity
+ com.example.plantoterapiaapp.PlantaActivity$1
+com/example/plantoterapiaapp/ModosPlantioMyAdapter.java
+ com.example.plantoterapiaapp.ModosPlantioMyAdapter
+com/example/plantoterapiaapp/AdicionarPlantaActivityViewModel.java
+ com.example.plantoterapiaapp.AdicionarPlantaActivityViewModel
+com/example/plantoterapiaapp/AdicionarPlantaActivity.java
+ com.example.plantoterapiaapp.AdicionarPlantaActivity
+ com.example.plantoterapiaapp.AdicionarPlantaActivity$1
+ com.example.plantoterapiaapp.AdicionarPlantaActivity$2
+com/example/plantoterapiaapp/ConhecaProjetoActivity.java
+ com.example.plantoterapiaapp.ConhecaProjetoActivity
+com/example/plantoterapiaapp/MainActivityViewModel.java
+ com.example.plantoterapiaapp.MainActivityViewModel
+com/example/plantoterapiaapp/MainActivity.java
+ com.example.plantoterapiaapp.MainActivity
+ com.example.plantoterapiaapp.MainActivity$1
+com/example/plantoterapiaapp/CadastroActivity.java
+ com.example.plantoterapiaapp.CadastroActivity
+com/example/plantoterapiaapp/PlantasMyAdapter.java
+ com.example.plantoterapiaapp.PlantasMyAdapter
+com/example/plantoterapiaapp/CriarPostActivityViewModel.java
+ com.example.plantoterapiaapp.CriarPostActivityViewModel
+com/example/plantoterapiaapp/PlantaActivityViewModel.java
+ com.example.plantoterapiaapp.PlantaActivityViewModel
+com/example/plantoterapiaapp/MyItem.java
+ com.example.plantoterapiaapp.MyItem
+com/example/plantoterapiaapp/BuildConfig.java
+ com.example.plantoterapiaapp.BuildConfig
+com/example/plantoterapiaapp/EstruturasQuimicasMyAdapter.java
+ com.example.plantoterapiaapp.EstruturasQuimicasMyAdapter
+com/example/plantoterapiaapp/Util.java
+ com.example.plantoterapiaapp.Util
+com/example/plantoterapiaapp/MyViewHolder.java
+ com.example.plantoterapiaapp.MyViewHolder
+com/example/plantoterapiaapp/SobreNosActivity.java
+ com.example.plantoterapiaapp.SobreNosActivity
+com/example/plantoterapiaapp/ReceitasMyAdapter.java
+ com.example.plantoterapiaapp.ReceitasMyAdapter

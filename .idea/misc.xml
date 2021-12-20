@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_adicionar_planta.xml" value="0.23873873873873874" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_cadastro.xml" value="0.23873873873873874" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_adicionar_planta.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_cadastro.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_conheca_projeto.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_criar_post.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_login.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_planta.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_sobre_nos.xml" value="0.4" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/estruturas_quimicas_list.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/modos_plantio_list.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/plantas_list.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/receitas_list.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/conhecaprojeto_toolbar.xml" value="0.264" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/item_toolbar.xml" value="0.264" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/main_toolbar.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/sobrenos_toolbar.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/tudo_toolbar.xml" value="0.13802083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
