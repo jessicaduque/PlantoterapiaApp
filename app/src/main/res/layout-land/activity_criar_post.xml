@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6F1CE"
+    tools:context=".CriarPostActivity">
+
+    <ImageButton
+        android:id="@+id/imbChooseImagePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddItemPost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+    <Button
+        android:id="@+id/btnModoPlantio"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded"
+        android:clickable="true"
+        android:fontFamily="@font/playfair_display"
+        android:text="Modo de Plantio"
+        android:textStyle="bold"
+        app:iconTint="#F78DAA"
+        app:layout_constraintEnd_toStartOf="@+id/btnEstrutQuimica"
+        app:layout_constraintStart_toEndOf="@+id/btnReceita"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReceita"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded"
+        android:clickable="true"
+        android:fontFamily="@font/playfair_display"
+        android:text="Receita"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnModoPlantio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEstrutQuimica"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded"
+        android:clickable="true"
+        android:fontFamily="@font/playfair_display"
+        android:text="Estrutura Química"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnModoPlantio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDescriptionPost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_textview"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="start|top"
+        android:hint="Informações sobre o projeto"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/imvPhotoPreviewPost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitlePost" />
+
+    <EditText
+        android:id="@+id/etTitlePost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_textview"
+        android:ems="10"
+        android:hint="Título do Projeto"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imvPhotoPreviewPost"
+        app:layout_constraintTop_toTopOf="@+id/imvPhotoPreviewPost" />
+
+    <ImageView
+        android:id="@+id/imvPhotoPreviewPost"
+        android:layout_width="239dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_textview"
+        app:layout_constraintBottom_toTopOf="@+id/imbChooseImagePost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReceita"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <Button
+        android:id="@+id/btnAddItemPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="@+id/imvPhotoPreviewPost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imvPhotoPreviewPost"
+        app:layout_constraintTop_toBottomOf="@+id/etTitlePost" />
+</androidx.constraintlayout.widget.ConstraintLayout>

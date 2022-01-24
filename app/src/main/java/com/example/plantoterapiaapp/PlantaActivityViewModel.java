@@ -15,10 +15,10 @@ public class PlantaActivityViewModel extends ViewModel {
         return receitas;
     }
     public List<MyItem> getModos_plantio() {
-        return receitas;
+        return modos_plantio;
     }
     public List<MyItem> getEstruturas_quimicas() {
-        return receitas;
+        return estruturas_quimicas;
     }
 
 }

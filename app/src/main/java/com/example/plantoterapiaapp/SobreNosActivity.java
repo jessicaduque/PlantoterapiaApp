@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,10 +38,14 @@ public class SobreNosActivity extends AppCompatActivity {
         switch(item.getItemId()) {
             case R.id.opHome: // Indica o que ocorre no caso do ícone do home ser clicado
                 // Código para ir para MainActivity
-                return true;
+                Intent i1 = new Intent(SobreNosActivity.this, MainActivity.class);
+                startActivity(i1);
+                finish();
             case R.id.opConhecaProjeto: // Indica o que ocorre no caso do ícone do conheça o projeto ser clicado
                 // Código para ir para Conheça o Projeto
-                return true;
+                Intent i2 = new Intent(SobreNosActivity.this, ConhecaProjetoActivity.class);
+                startActivity(i2);
+                finish();
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -1,5 +1,10 @@
 com/example/plantoterapiaapp/CriarPostActivity.java
  com.example.plantoterapiaapp.CriarPostActivity
+ com.example.plantoterapiaapp.CriarPostActivity$1
+ com.example.plantoterapiaapp.CriarPostActivity$2
+ com.example.plantoterapiaapp.CriarPostActivity$3
+ com.example.plantoterapiaapp.CriarPostActivity$4
+ com.example.plantoterapiaapp.CriarPostActivity$5
 com/example/plantoterapiaapp/LoginActivity.java
  com.example.plantoterapiaapp.LoginActivity
 com/example/plantoterapiaapp/PlantaActivity.java

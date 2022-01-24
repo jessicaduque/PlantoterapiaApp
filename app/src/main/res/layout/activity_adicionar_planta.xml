@@ -7,7 +7,7 @@
     tools:context=".AdicionarPlantaActivity">
 
     <ImageView
-        android:id="@+id/imvPhotoPreview"
+        android:id="@+id/imvPhotoPreviewPlanta"
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:layout_marginStart="8dp"
@@ -19,7 +19,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imbChooseImage"
+        android:id="@+id/imbChooseImagePlanta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -27,11 +27,11 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imvPhotoPreview"
+        app:layout_constraintTop_toBottomOf="@+id/imvPhotoPreviewPlanta"
         app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
 
     <EditText
-        android:id="@+id/etTitle"
+        android:id="@+id/etTitlePlanta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -42,10 +42,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imbChooseImage" />
+        app:layout_constraintTop_toBottomOf="@+id/imbChooseImagePlanta" />
 
     <EditText
-        android:id="@+id/etDescription"
+        android:id="@+id/etDescriptionPlanta"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -56,13 +56,13 @@
         android:gravity="start|top"
         android:hint="@string/str_hint_descricao"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddItem"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddItemPlanta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/etTitlePlanta" />
 
     <Button
-        android:id="@+id/btnAddItem"
+        android:id="@+id/btnAddItemPlanta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

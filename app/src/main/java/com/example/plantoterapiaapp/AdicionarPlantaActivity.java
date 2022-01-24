@@ -8,7 +8,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,13 +29,13 @@ public class AdicionarPlantaActivity extends AppCompatActivity {
 
         Uri selectedPhotoLocation = vm.getSelectedPhotoLocation();
         if(selectedPhotoLocation != null){
-            ImageView imvPhotoPreview = findViewById(R.id.imvPhotoPreview);
+            ImageView imvPhotoPreview = findViewById(R.id.imvPhotoPreviewPlanta);
             imvPhotoPreview.setImageURI(selectedPhotoLocation);
 
         }
 
         //Quando o botão de imagem for clicado irá abrir a galeria do celular para selecionar um documento tipo imagem
-        ImageButton imgChooseImage = findViewById(R.id.imbChooseImage);
+        ImageButton imgChooseImage = findViewById(R.id.imbChooseImagePlanta);
         imgChooseImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,28 +45,28 @@ public class AdicionarPlantaActivity extends AppCompatActivity {
             }
         });
 
-        Button btnAddItem = findViewById(R.id.btnAddItem);
+        Button btnAddItem = findViewById(R.id.btnAddItemPlanta);
         btnAddItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AdicionarPlantaActivityViewModel vm = new ViewModelProvider(AdicionarPlantaActivity.this).get(AdicionarPlantaActivityViewModel.class);
                 Uri selectedPhotoLocation = vm.getSelectedPhotoLocation();
                 if(selectedPhotoLocation == null){ //Se não houver uma imagem selecionada, será exibida uma mensagem de erro na tela
-                    Toast.makeText(AdicionarPlantaActivity.this, "É necessário selecionar uma imagen", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AdicionarPlantaActivity.this, "É necessário selecionar uma imagem", Toast.LENGTH_LONG).show();
                     return;
                 }
                 //Pega o que a pessoa digitou como título e transforma em string
-                EditText etTitle = findViewById(R.id.etTitle);
+                EditText etTitle = findViewById(R.id.etTitlePlanta);
                 String title = etTitle.getText().toString();
                 //exibe uma mensagem de erro, caso não haja nada escrito nesse campo
                 if(title.isEmpty()){
-                    Toast.makeText(AdicionarPlantaActivity.this, "É necessário escrever um título", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AdicionarPlantaActivity.this, "É necessário escrever um nome", Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 //Pega o que a pessoa digitou como descrição e transforma em string
-                EditText etDescription = findViewById(R.id.etDescription);
-                String description = etTitle.getText().toString();
+                EditText etDescription = findViewById(R.id.etDescriptionPlanta);
+                String description = etDescription.getText().toString();
                 //exibe uma mensagem de erro, caso não haja nada escrito nesse campo
                 if(description.isEmpty()){
                     Toast.makeText(AdicionarPlantaActivity.this, "É necessário escrever uma descrição", Toast.LENGTH_LONG).show();
@@ -91,7 +90,7 @@ public class AdicionarPlantaActivity extends AppCompatActivity {
         if(requestCode == PHOTO_PICKER_REQUEST){ //indica qual é a requisição
             if(resultCode == Activity.RESULT_OK){ //Se a pessoa selecionou uma foto
                 Uri selectedPhotoLocation = data.getData(); //Pega a foto
-                ImageView imvPhotoPreview = findViewById(R.id.imvPhotoPreview);
+                ImageView imvPhotoPreview = findViewById(R.id.imvPhotoPreviewPlanta);
                 imvPhotoPreview.setImageURI(selectedPhotoLocation);
 
                 AdicionarPlantaActivityViewModel vm = new ViewModelProvider(this).get(AdicionarPlantaActivityViewModel.class);

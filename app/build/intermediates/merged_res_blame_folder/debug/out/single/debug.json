@@ -176,6 +176,14 @@
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\button_rounded.xml"
     },
     {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_criar_post.xml.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout-land\\activity_criar_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_planta.xml.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout-land\\activity_planta.xml"
+    },
+    {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -212,11 +220,19 @@
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout\\activity_planta.xml"
     },
     {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_sobre_nos.xml.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout-land\\activity_sobre_nos.xml"
+    },
+    {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_nauvia.png.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\nauvia.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_local_florist_24.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\ic_baseline_local_florist_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_conheca_projeto.xml.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout-land\\activity_conheca_projeto.xml"
     }
 ]

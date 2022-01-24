@@ -38,15 +38,11 @@ public class PlantasMyAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         MyItem myItem = itens.get(position);
         View v = holder.itemView;
-        ImageView imvPhoto = v.findViewById(R.id.imvEstruturaQuimicaFoto);
+        ImageView imvPhoto = v.findViewById(R.id.imvPlantaFoto);
         imvPhoto.setImageBitmap(myItem.photo);
 
-        TextView tvTitle = v.findViewById(R.id.tvEstruturaQuimicaTitulo);
+        TextView tvTitle = v.findViewById(R.id.tvPlantaTitulo);
         tvTitle.setText(myItem.title);
-
-        TextView tvDescription = v.findViewById(R.id.tvEstruturaQuimicaDescricao);
-        tvDescription.setText(myItem.description);
-
     }
 
     @Override

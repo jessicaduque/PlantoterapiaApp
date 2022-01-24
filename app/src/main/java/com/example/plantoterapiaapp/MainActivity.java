@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     static int NEW_ITEM_REQUEST = 1; // Define um valor inteiro
 
-    PlantasMyAdapter myAdapter;
+    PlantasMyAdapter plantasMyAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +52,15 @@ public class MainActivity extends AppCompatActivity {
 
         List<MyItem> itens = vm.getItens(); // Pega a lista de itens no viewmodel recebido
 
-        myAdapter = new PlantasMyAdapter(this, itens); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
+        plantasMyAdapter = new PlantasMyAdapter(this, itens); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
 
-        RecyclerView rvItens = findViewById(R.id.rvReceitas); // Define um recyclerview da interface através de seu id
+        RecyclerView rvItens = findViewById(R.id.rvPlantas); // Define um recyclerview da interface através de seu id
         rvItens.setHasFixedSize(true); // Define que cada item da lista terá um tamanho igual (é algo que aumenta a velocidade)
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this); // Cria um tipo de layout de recyclerview, nesse caso linear
         rvItens.setLayoutManager(layoutManager); // Define como os itens da lista serão apresentados, nesse caso sendo de modo linear de acordo com o layout de recyclerview criado anteriormente
 
-        rvItens.setAdapter(myAdapter); // Define qual adapter que vai construir os itens da lista
+        rvItens.setAdapter(plantasMyAdapter); // Define qual adapter que vai construir os itens da lista
     }
 
     @Override
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
                 itens.add(newItem); // Adiciona na lista de itens o item criado anteriormente
 
-                myAdapter.notifyItemInserted(itens.size()-1); // Avisa que um novo item foi criado
+                plantasMyAdapter.notifyItemInserted(itens.size()-1); // Avisa que um novo item foi criado
             }
         }
     }
@@ -112,10 +112,12 @@ public class MainActivity extends AppCompatActivity {
         switch(item.getItemId()) {
             case R.id.opSobreNos: // Indica o que ocorre no caso do sobre nós do home ser clicado
                 // Código para ir para Sobre Nós
-                return true;
+                Intent i1 = new Intent(MainActivity.this, SobreNosActivity.class);
+                startActivity(i1);
             case R.id.opConhecaProjeto: // Indica o que ocorre no caso do ícone do conheça o projeto ser clicado
                 // Código para ir para Conheça o Projeto
-                return true;
+                Intent i2 = new Intent(MainActivity.this, ConhecaProjetoActivity.class);
+                startActivity(i2);
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -56,16 +56,37 @@ public class PlantaActivity extends AppCompatActivity {
         List<MyItem> estruturas_quimicas = vm.getEstruturas_quimicas(); // Pega a lista de itens no viewmodel recebido
 
         receitasMyAdapter = new ReceitasMyAdapter(this, receitas); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
-        modosPlantioMyAdapter = new ModosPlantioMyAdapter(this, receitas); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
-        estruturasQuimicasMyAdapter = new EstruturasQuimicasMyAdapter(this, receitas); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
+        modosPlantioMyAdapter = new ModosPlantioMyAdapter(this, modos_plantio); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
+        estruturasQuimicasMyAdapter = new EstruturasQuimicasMyAdapter(this, estruturas_quimicas); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
 
+
+        // RecyclerView para receitas
         RecyclerView rvReceitas = findViewById(R.id.rvReceitas); // Define um recyclerview da interface através de seu id
         rvReceitas.setHasFixedSize(true); // Define que cada item da lista terá um tamanho igual (é algo que aumenta a velocidade)
 
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this); // Cria um tipo de layout de recyclerview, nesse caso linear
-        rvReceitas.setLayoutManager(layoutManager); // Define como os itens da lista serão apresentados, nesse caso sendo de modo linear de acordo com o layout de recyclerview criado anteriormente
+        RecyclerView.LayoutManager layoutManagerReceitas = new LinearLayoutManager(this); // Cria um tipo de layout de recyclerview, nesse caso linear
+        rvReceitas.setLayoutManager(layoutManagerReceitas); // Define como os itens da lista serão apresentados, nesse caso sendo de modo linear de acordo com o layout de recyclerview criado anteriormente
 
         rvReceitas.setAdapter(receitasMyAdapter); // Define qual adapter que vai construir os itens da lista
+
+
+        // Mesma coisa acima, mas para estruturas químicas
+        RecyclerView rvEstruturasQuimicas = findViewById(R.id.rvEstruturasQuimicas);
+        rvEstruturasQuimicas.setHasFixedSize(true);
+
+        RecyclerView.LayoutManager layoutManagerEstruturasQuimicas = new LinearLayoutManager(this);
+        rvEstruturasQuimicas.setLayoutManager(layoutManagerEstruturasQuimicas);
+
+        rvEstruturasQuimicas.setAdapter(estruturasQuimicasMyAdapter);
+
+        // Mesma coisa acima, mas para modos de plantio
+        RecyclerView rvModosPlantio = findViewById(R.id.rvModosPlantio);
+        rvModosPlantio.setHasFixedSize(true);
+
+        RecyclerView.LayoutManager layoutManagerModosPlantio = new LinearLayoutManager(this);
+        rvModosPlantio.setLayoutManager(layoutManagerModosPlantio);
+
+        rvModosPlantio.setAdapter(modosPlantioMyAdapter);
     }
 
     @Override
@@ -84,8 +105,10 @@ public class PlantaActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                String title = data.getStringExtra("title"); // Define uma string com o valor extra do título que foi colocado anteriormente na intenção que serviu de resultado para esta função
-                String description = data.getStringExtra("description"); // Define uma string com o valor extra da descrição que foi colocada anteriormente na intenção que serviu de resultado para esta função
+                String title = data.getStringExtra("title"); // Define uma string com o valor do título que foi colocado anteriormente na intenção que serviu de resultado para esta função
+                String description = data.getStringExtra("description"); // Define uma string com o extra da descrição que foi colocada anteriormente na intenção que serviu de resultado para esta função
+                String tipopost = data.getStringExtra("tipopost"); // Define uma string com o extra do tipo de post que foi colocada anteriormente na intenção que serviu de resultado para esta função
+
 
                 newItem.title = title; // Define a o título do item criado anteriormente como o título definido aqui anteriormente
                 newItem.description = description; // Define a descrição da foto do item criado anteriormente como a descrição definida aqui anteriormente
@@ -93,11 +116,33 @@ public class PlantaActivity extends AppCompatActivity {
 
                 PlantaActivityViewModel vm = new ViewModelProvider(this).get(PlantaActivityViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
 
-                List<MyItem> itens = vm.getReceitas(); // Pega a lista de itens no viewmodel recebido
 
-                itens.add(newItem); // Adiciona na lista de itens o item criado anteriormente
+                // Adiciona o item criado e preenchido na lista de receitas caso tenha sido escolhido anteriormanete como este
+                if(tipopost == "receita") {
+                    List<MyItem> receitas = vm.getReceitas(); // Pega a lista de itens no viewmodel recebido
 
-                receitasMyAdapter.notifyItemInserted(itens.size()-1); // Avisa que um novo item foi criado
+                    receitas.add(newItem); // Adiciona na lista de itens o item criado anteriormente
+
+                    receitasMyAdapter.notifyItemInserted(receitas.size() - 1); // Avisa que um novo item foi criado
+                }
+
+                // Mesma coisa acima mas para estruturas químicas
+                if(tipopost == "estrutura química") {
+                    List<MyItem> estruturasquimicas = vm.getEstruturas_quimicas(); // Pega a lista de itens no viewmodel recebido
+
+                    estruturasquimicas.add(newItem); // Adiciona na lista de itens o item criado anteriormente
+
+                    estruturasQuimicasMyAdapter.notifyItemInserted(estruturasquimicas.size() - 1); // Avisa que um novo item foi criado
+                }
+
+                // Mesma coisa acima mas para modos de plantio
+                if(tipopost == "modo plantio") {
+                    List<MyItem> modosplantio = vm.getModos_plantio(); // Pega a lista de itens no viewmodel recebido
+
+                    modosplantio.add(newItem); // Adiciona na lista de itens o item criado anteriormente
+
+                    modosPlantioMyAdapter.notifyItemInserted(modosplantio.size() - 1); // Avisa que um novo item foi criado
+                }
             }
         }
     }
@@ -118,13 +163,16 @@ public class PlantaActivity extends AppCompatActivity {
         switch(item.getItemId()) {
             case R.id.opHome: // Indica o que ocorre no caso do ícone do home ser clicado
                 // Código para ir para MainActivity
-                return true;
+                Intent i1 = new Intent(PlantaActivity.this, MainActivity.class);
+                startActivity(i1);
             case R.id.opSobreNos: // Indica o que ocorre no caso do ícone do sobre nós ser clicado
                 // Código para ir para Sobre Nós
-                return true;
+                Intent i2 = new Intent(PlantaActivity.this, SobreNosActivity.class);
+                startActivity(i2);
             case R.id.opConhecaProjeto: // Indica o que ocorre no caso do ícone do conheça o projeto ser clicado
                 // Código para ir para Conheça o Projeto
-                return true;
+                Intent i3 = new Intent(PlantaActivity.this, ConhecaProjetoActivity.class);
+                startActivity(i3);
             default:
                 return super.onOptionsItemSelected(item);
         }
