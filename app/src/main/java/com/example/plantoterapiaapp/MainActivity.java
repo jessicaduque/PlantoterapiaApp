@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
                 itens.add(newItem); // Adiciona na lista de itens o item criado anteriormente
 
-                plantasMyAdapter.notifyItemInserted(itens.size()-1); // Avisa que um novo item foi criado
+                plantasMyAdapter.notifyDataSetChanged(); // Avisa que um novo item foi criado
             }
         }
     }
@@ -114,13 +114,13 @@ public class MainActivity extends AppCompatActivity {
                 // Código para ir para Sobre Nós
                 Intent i1 = new Intent(MainActivity.this, SobreNosActivity.class);
                 startActivity(i1);
+                break;
             case R.id.opConhecaProjeto: // Indica o que ocorre no caso do ícone do conheça o projeto ser clicado
                 // Código para ir para Conheça o Projeto
                 Intent i2 = new Intent(MainActivity.this, ConhecaProjetoActivity.class);
                 startActivity(i2);
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+                break;
+        } return super.onOptionsItemSelected(item);
     }
 
     // Configura a atividade que inicia antes que o usuário comece a mexer

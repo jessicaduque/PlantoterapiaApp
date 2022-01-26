@@ -21,19 +21,27 @@
         <entry key="..\:/Users/20191TIIMI0100/AndroidStudioProjects/PlantoterapiaApp/app/src/main/res/menu/main_toolbar.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/20191TIIMI0100/AndroidStudioProjects/PlantoterapiaApp/app/src/main/res/menu/planta_toolbar.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/20191TIIMI0100/AndroidStudioProjects/PlantoterapiaApp/app/src/main/res/menu/sobrenos_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/amanda.xml" value="0.1" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/bg_imageview.xml" value="0.1" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/bg_textview.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/button_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/ic_baseline_add_a_photo_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/ic_baseline_book_24.xml" value="0.1" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/ic_baseline_home_25.xml" value="0.1" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/drawable/ic_baseline_info_27.xml" value="0.1" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_adicionar_planta.xml" value="0.23873873873873874" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_cadastro.xml" value="0.23873873873873874" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_conheca_projeto.xml" value="0.4" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_criar_post.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_planta.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_planta.xml" value="0.264" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout-land/activity_sobre_nos.xml" value="0.264" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_adicionar_planta.xml" value="0.13802083333333334" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_cadastro.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_conheca_projeto.xml" value="0.264" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_criar_post.xml" value="0.264" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_login.xml" value="0.13802083333333334" />
-        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_main.xml" value="0.136" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_planta.xml" value="0.264" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/activity_sobre_nos.xml" value="0.264" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/estruturas_quimicas_list.xml" value="0.13020833333333334" />
@@ -42,7 +50,7 @@
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/layout/receitas_list.xml" value="0.13802083333333334" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/conhecaprojeto_toolbar.xml" value="0.264" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/item_toolbar.xml" value="0.264" />
-        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/main_toolbar.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/main_toolbar.xml" value="0.4" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/planta_toolbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/sobrenos_toolbar.xml" value="0.13802083333333334" />
         <entry key="..\:/Users/Jessi/Git/PlantoterapiaApp/app/src/main/res/menu/tudo_toolbar.xml" value="0.13802083333333334" />

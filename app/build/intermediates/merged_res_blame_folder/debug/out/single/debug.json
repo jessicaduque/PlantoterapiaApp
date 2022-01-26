@@ -12,20 +12,12 @@
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\ic_baseline_add_a_photo_24.xml"
     },
     {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_livro_ciencia.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\livro_ciencia.png"
-    },
-    {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_people_26.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\ic_baseline_people_26.xml"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_criar_post.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout\\activity_criar_post.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_horta_dois.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\horta_dois.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
@@ -40,16 +32,16 @@
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\menu_planta_toolbar.xml.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\menu\\planta_toolbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_horta_um.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\horta_um.png"
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_horta_um.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\horta_um.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout_plantas_list.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout\\plantas_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_horta_tres.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\horta_tres.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\font_playfair_display.xml.flat",
@@ -58,10 +50,6 @@
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout_receitas_list.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout\\receitas_list.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\menu_sobrenos_toolbar.xml.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\menu\\sobrenos_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\menu_main_toolbar.xml.flat",
@@ -74,10 +62,6 @@
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_25.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\ic_baseline_home_25.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_horta_tres.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\horta_tres.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
@@ -98,6 +82,10 @@
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout_modos_plantio_list.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout\\modos_plantio_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_sophia.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\sophia.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -124,20 +112,16 @@
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_jessica.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\jessica.png"
-    },
-    {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_textview.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\bg_textview.xml"
     },
     {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_horta_dois.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\horta_dois.png"
     },
     {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\menu_conhecaprojeto_toolbar.xml.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\menu\\conhecaprojeto_toolbar.xml"
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -146,6 +130,22 @@
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_cadastro.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout-land\\activity_cadastro.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_nauvia.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\nauvia.png"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_livro_ciencia.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\livro_ciencia.png"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_amanda.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\amanda.png"
+    },
+    {
+        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_jessica.png.flat",
+        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\drawable-v24\\jessica.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_imageview.xml.flat",
@@ -188,14 +188,6 @@
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_sophia.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\sophia.png"
-    },
-    {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_amanda.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\amanda.png"
-    },
-    {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -222,10 +214,6 @@
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_sobre_nos.xml.flat",
         "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\layout-land\\activity_sobre_nos.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_nauvia.png.flat",
-        "source": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\nauvia.png"
     },
     {
         "merged": "C:\\Users\\Jessi\\Git\\PlantoterapiaApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_local_florist_24.xml.flat",

@@ -54,9 +54,27 @@
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordConf"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/etPasswordConf"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_textview"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <TextView
@@ -87,8 +105,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <TextView

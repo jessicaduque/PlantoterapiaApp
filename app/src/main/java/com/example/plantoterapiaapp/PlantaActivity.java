@@ -36,10 +36,6 @@ public class PlantaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planta);
 
-        // Pega a toolbar da interface usando seu ID e define ele como a barra da atividade
-        Toolbar toolbar = findViewById(R.id.tbPlanta);
-        setSupportActionBar(toolbar);
-
         FloatingActionButton fabCriarPost = findViewById(R.id.fabCriarPost); // Define um floatingactionbutton da interface através de seu id
         fabCriarPost.setOnClickListener(new View.OnClickListener() { // Define o que ocorre ao clicar no botão definido
             @Override
@@ -59,7 +55,7 @@ public class PlantaActivity extends AppCompatActivity {
         modosPlantioMyAdapter = new ModosPlantioMyAdapter(this, modos_plantio); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
         estruturasQuimicasMyAdapter = new EstruturasQuimicasMyAdapter(this, estruturas_quimicas); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
 
-
+        /*
         // RecyclerView para receitas
         RecyclerView rvReceitas = findViewById(R.id.rvReceitas); // Define um recyclerview da interface através de seu id
         rvReceitas.setHasFixedSize(true); // Define que cada item da lista terá um tamanho igual (é algo que aumenta a velocidade)
@@ -87,6 +83,7 @@ public class PlantaActivity extends AppCompatActivity {
         rvModosPlantio.setLayoutManager(layoutManagerModosPlantio);
 
         rvModosPlantio.setAdapter(modosPlantioMyAdapter);
+       */
     }
 
     @Override
@@ -144,37 +141,6 @@ public class PlantaActivity extends AppCompatActivity {
                     modosPlantioMyAdapter.notifyItemInserted(modosplantio.size() - 1); // Avisa que um novo item foi criado
                 }
             }
-        }
-    }
-
-    // Método que fala para a aplicação utilizar o menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.planta_toolbar, menu);
-        return true;
-    }
-
-    // Método que indica o que acontece ao clicar em cada item
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        super.onOptionsItemSelected(item);
-        switch(item.getItemId()) {
-            case R.id.opHome: // Indica o que ocorre no caso do ícone do home ser clicado
-                // Código para ir para MainActivity
-                Intent i1 = new Intent(PlantaActivity.this, MainActivity.class);
-                startActivity(i1);
-            case R.id.opSobreNos: // Indica o que ocorre no caso do ícone do sobre nós ser clicado
-                // Código para ir para Sobre Nós
-                Intent i2 = new Intent(PlantaActivity.this, SobreNosActivity.class);
-                startActivity(i2);
-            case R.id.opConhecaProjeto: // Indica o que ocorre no caso do ícone do conheça o projeto ser clicado
-                // Código para ir para Conheça o Projeto
-                Intent i3 = new Intent(PlantaActivity.this, ConhecaProjetoActivity.class);
-                startActivity(i3);
-            default:
-                return super.onOptionsItemSelected(item);
         }
     }
 

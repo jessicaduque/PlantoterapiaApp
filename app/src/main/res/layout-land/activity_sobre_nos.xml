@@ -11,25 +11,24 @@
         android:id="@+id/imvJessica"
         android:layout_width="147dp"
         android:layout_height="137dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbSobreNos"
-        app:srcCompat="@mipmap/jessica"
-        tools:srcCompat="@mipmap/jessica" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jessica" />
 
     <TextView
         android:id="@+id/tvJessica"
         android:layout_width="140dp"
         android:layout_height="134dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg_textview"
         android:fontFamily="sans-serif"
         android:text="@string/str_sobre_jessica"
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imvJessica"
-        app:layout_constraintTop_toBottomOf="@+id/tbSobreNos" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imvAmanda"
@@ -40,8 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imvJessica"
-        app:srcCompat="@mipmap/amanda"
-        tools:srcCompat="@mipmap/amanda" />
+        app:srcCompat="@drawable/amanda" />
 
     <TextView
         android:id="@+id/tvAmanda"
@@ -61,24 +59,23 @@
         android:id="@+id/imvSophia"
         android:layout_width="147dp"
         android:layout_height="137dp"
-        android:layout_marginTop="8dp"
-        android:src="@mipmap/sophia"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/sophia"
         app:layout_constraintEnd_toStartOf="@+id/tvSophia"
-        app:layout_constraintTop_toBottomOf="@+id/tbSobreNos"
-        tools:src="@mipmap/sophia"
-        tools:srcCompat="@mipmap/sophia" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/sophia" />
 
     <TextView
         android:id="@+id/tvSophia"
         android:layout_width="145dp"
         android:layout_height="134dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/bg_textview"
         android:text="@string/str_sobre_sophia"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbSobreNos" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -90,7 +87,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvNauvia"
         app:layout_constraintTop_toBottomOf="@+id/imvSophia"
-        app:srcCompat="@mipmap/nauvia" />
+        app:srcCompat="@drawable/nauvia" />
 
     <TextView
         android:id="@+id/tvNauvia"
@@ -105,16 +102,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imvSophia" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tbSobreNos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

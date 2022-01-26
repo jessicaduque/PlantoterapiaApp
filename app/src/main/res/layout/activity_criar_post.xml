@@ -7,6 +7,16 @@
     android:background="#B6F1CE"
     tools:context=".CriarPostActivity">
 
+    <ImageButton
+        android:id="@+id/imbChooseImagePost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
     <Button
         android:id="@+id/btnModoPlantio"
         android:layout_width="110dp"
@@ -100,7 +110,6 @@
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/bg_textview"
         app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,13 +123,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
         android:clickable="true"
         android:text="Salvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imbChooseImagePost2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

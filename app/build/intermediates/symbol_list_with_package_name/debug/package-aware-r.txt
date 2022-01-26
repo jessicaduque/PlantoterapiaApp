@@ -1782,6 +1782,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable amanda
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg_imageview
@@ -1800,6 +1801,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable horta_dois
+drawable horta_tres
+drawable horta_um
 drawable ic_baseline_add_24
 drawable ic_baseline_add_a_photo_24
 drawable ic_baseline_add_photo_alternate_24
@@ -1818,6 +1822,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable jessica
+drawable livro_ciencia
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1838,6 +1844,7 @@ drawable mtrl_navigation_bar_item_background
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable nauvia
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1851,6 +1858,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable sophia
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2049,6 +2057,7 @@ id etEmail2
 id etMultiLine
 id etPassword
 id etPassword2
+id etPasswordConf
 id etTitleName
 id etTitlePlanta
 id etTitlePost
@@ -2096,6 +2105,7 @@ id imageView4
 id imageView5
 id imbChooseImagePlanta
 id imbChooseImagePost
+id imbChooseImagePost2
 id immediateStop
 id imvAmanda
 id imvEstruturaQuimicaFoto
@@ -2205,7 +2215,6 @@ id off
 id on
 id onInterceptTouchReturnSwipe
 id opConhecaProjeto
-id opHome
 id opSobreNos
 id outline
 id outward
@@ -2236,10 +2245,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id rvEstruturasQuimicas
-id rvModosPlantio
 id rvPlantas
-id rvReceitas
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2315,10 +2321,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id tbConhecaProjeto
 id tbMain
-id tbPlanta
-id tbSobreNos
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2366,6 +2369,7 @@ id tvModoPlantioDescricao
 id tvModoPlantioTitulo
 id tvNaoPossui
 id tvNauvia
+id tvPlantaDescricao
 id tvPlantaDescricao2
 id tvPlantaTitulo
 id tvPlantaTitulo2
@@ -2562,22 +2566,11 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu conhecaprojeto_toolbar
 menu example_menu
 menu example_menu2
 menu main_toolbar
-menu planta_toolbar
-menu sobrenos_toolbar
-mipmap amanda
-mipmap horta_dois
-mipmap horta_tres
-mipmap horta_um
 mipmap ic_launcher
 mipmap ic_launcher_round
-mipmap jessica
-mipmap livro_ciencia
-mipmap nauvia
-mipmap sophia
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
