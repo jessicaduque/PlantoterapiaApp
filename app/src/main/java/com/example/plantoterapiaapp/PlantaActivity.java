@@ -17,6 +17,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -25,124 +29,100 @@ import java.util.List;
 
 public class PlantaActivity extends AppCompatActivity {
 
-    static int NEW_ITEM_REQUEST = 1; // Define um valor inteiro
-
-    ReceitasMyAdapter receitasMyAdapter;
-    ModosPlantioMyAdapter modosPlantioMyAdapter;
-    EstruturasQuimicasMyAdapter estruturasQuimicasMyAdapter;
+    static int DISPLAY_ITEM_REQUEST = 1; // Define um valor inteiro
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planta);
 
-        FloatingActionButton fabCriarPost = findViewById(R.id.fabCriarPost); // Define um floatingactionbutton da interface através de seu id
-        fabCriarPost.setOnClickListener(new View.OnClickListener() { // Define o que ocorre ao clicar no botão definido
+
+        // Botão para ir a lista de estruturas químicas da planta
+        Button btnEstruturasQuimicas = findViewById(R.id.btnEstruturasQuimicas);
+        btnEstruturasQuimicas.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent i = new Intent(PlantaActivity.this, CriarPostActivity.class); // Cria uma intenção onde o usuário vai do MainActivity até o NewItemActivity
-                startActivityForResult(i, NEW_ITEM_REQUEST); // Executa a intenção criada, para depois receber certo resultado, que será identificado pelo valor inteiro criado
+            public void onClick(View view) {
+                Intent i1 = new Intent(PlantaActivity.this, EstruturasQuimicasActivity.class);
+                startActivity(i1);
             }
         });
 
-        PlantaActivityViewModel vm = new ViewModelProvider(this).get(PlantaActivityViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
 
-        List<MyItem> receitas = vm.getReceitas(); // Pega a lista de itens no viewmodel recebido
-        List<MyItem> modos_plantio = vm.getModos_plantio(); // Pega a lista de itens no viewmodel recebido
-        List<MyItem> estruturas_quimicas = vm.getEstruturas_quimicas(); // Pega a lista de itens no viewmodel recebido
+        // Botão para ir a lista de modos de plantio da planta
+        Button btnModosPlantio = findViewById(R.id.btnModosPlantio);
+        btnModosPlantio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i2 = new Intent(PlantaActivity.this, ModosPlantioActivity.class);
+                startActivity(i2);
+            }
+        });
 
-        receitasMyAdapter = new ReceitasMyAdapter(this, receitas); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
-        modosPlantioMyAdapter = new ModosPlantioMyAdapter(this, modos_plantio); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
-        estruturasQuimicasMyAdapter = new EstruturasQuimicasMyAdapter(this, estruturas_quimicas); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
+        // Botão para ir a lista de receitas da planta
+        Button btnReceitas = findViewById(R.id.btnReceitas);
+        btnReceitas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i3 = new Intent(PlantaActivity.this, ReceitasActivity.class);
+                startActivity(i3);
+            }
+        });
 
-        /*
-        // RecyclerView para receitas
-        RecyclerView rvReceitas = findViewById(R.id.rvReceitas); // Define um recyclerview da interface através de seu id
-        rvReceitas.setHasFixedSize(true); // Define que cada item da lista terá um tamanho igual (é algo que aumenta a velocidade)
+        // Define o título da planta
+        TextView tvPlantaTitulo2 = findViewById(R.id.tvPlantaTitulo2);
+        String title = getIntent().getStringExtra("title");
+        tvPlantaTitulo2.setText(title);
 
-        RecyclerView.LayoutManager layoutManagerReceitas = new LinearLayoutManager(this); // Cria um tipo de layout de recyclerview, nesse caso linear
-        rvReceitas.setLayoutManager(layoutManagerReceitas); // Define como os itens da lista serão apresentados, nesse caso sendo de modo linear de acordo com o layout de recyclerview criado anteriormente
+        // Define a descrição da planta
+        TextView tvPlantaDescricao = findViewById(R.id.tvPlantaDescricao);
+        String descricao = getIntent().getStringExtra("description");
+        tvPlantaDescricao.setText(descricao);
 
-        rvReceitas.setAdapter(receitasMyAdapter); // Define qual adapter que vai construir os itens da lista
-
-
-        // Mesma coisa acima, mas para estruturas químicas
-        RecyclerView rvEstruturasQuimicas = findViewById(R.id.rvEstruturasQuimicas);
-        rvEstruturasQuimicas.setHasFixedSize(true);
-
-        RecyclerView.LayoutManager layoutManagerEstruturasQuimicas = new LinearLayoutManager(this);
-        rvEstruturasQuimicas.setLayoutManager(layoutManagerEstruturasQuimicas);
-
-        rvEstruturasQuimicas.setAdapter(estruturasQuimicasMyAdapter);
-
-        // Mesma coisa acima, mas para modos de plantio
-        RecyclerView rvModosPlantio = findViewById(R.id.rvModosPlantio);
-        rvModosPlantio.setHasFixedSize(true);
-
-        RecyclerView.LayoutManager layoutManagerModosPlantio = new LinearLayoutManager(this);
-        rvModosPlantio.setLayoutManager(layoutManagerModosPlantio);
-
-        rvModosPlantio.setAdapter(modosPlantioMyAdapter);
-       */
+        // CÓDIGO PARA DEFINIR A FOTO DA PLANTA
     }
 
+    /*
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) { // Função que ocorre ao receber um resultado anterior que foi pedido
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == NEW_ITEM_REQUEST) { // Começa a definir uma parte de código que só vai ocorrer se o resultado pedido for referente ao pedido de mudar de algum resultado de antes, nesse caso identificado através do valor inteiro requestCode recebido desta função. Nesse caso, como a intenção executada que pediu resultado utilizou como inteiro o NEW_ITEM_REQUEST, isso será reconhecido como o requestCode desta função
+        if(requestCode == DISPLAY_ITEM_REQUEST) { // Começa a definir uma parte de código que só vai ocorrer se o resultado pedido for referente ao pedido de mudar de algum resultado de antes, nesse caso identificado através do valor inteiro requestCode recebido desta função. Nesse caso, como a intenção executada que pediu resultado utilizou como inteiro o NEW_ITEM_REQUEST, isso será reconhecido como o requestCode desta função
             if(resultCode == Activity.RESULT_OK){ // Irá checar se o resultado pedido foi realizado com sucesso, nesse caso, se o ok foi dado em alguma hora para a atividade. Caso sim, o código seguinte rodará
+
+                TextView tvPlantaTitulo2 = findViewById(R.id.tvPlantaTitulo2);
+                String title = data.getStringExtra("title");
+                tvPlantaTitulo2.setText(title);
+
+
+                /*
                 MyItem newItem = new MyItem(); // Cria um item utilizando a classe criada especificamente para criar itens
 
                 Uri selectedPhotoLocation = data.getData(); // Define uma Uri com a Uri (endereço) da imagem escolhida pelo usuário, que no caso foi recebido na função como o valor data, que continha uma intenção reccebida com valor de Uri
                 try {
-                    Bitmap photo = Util.getBitmap(PlantaActivity.this, selectedPhotoLocation, 400, 200); // Pega a imagem de acordo com a Uri, cria um bitmap dela e reescala a imagem
+                    Bitmap photo = Util.getBitmap(MainActivity.this, selectedPhotoLocation, 400, 200); // Pega a imagem de acordo com a Uri, cria um bitmap dela e reescala a imagem
                     newItem.photo = photo; // Define a foto do item como a foto criado acima com o Uri informado
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
 
-                String title = data.getStringExtra("title"); // Define uma string com o valor do título que foi colocado anteriormente na intenção que serviu de resultado para esta função
-                String description = data.getStringExtra("description"); // Define uma string com o extra da descrição que foi colocada anteriormente na intenção que serviu de resultado para esta função
-                String tipopost = data.getStringExtra("tipopost"); // Define uma string com o extra do tipo de post que foi colocada anteriormente na intenção que serviu de resultado para esta função
-
+                String title = data.getStringExtra("title"); // Define uma string com o valor extra do título que foi colocado anteriormente na intenção que serviu de resultado para esta função
+                String description = data.getStringExtra("description"); // Define uma string com o valor extra da descrição que foi colocada anteriormente na intenção que serviu de resultado para esta função
 
                 newItem.title = title; // Define a o título do item criado anteriormente como o título definido aqui anteriormente
                 newItem.description = description; // Define a descrição da foto do item criado anteriormente como a descrição definida aqui anteriormente
 
 
-                PlantaActivityViewModel vm = new ViewModelProvider(this).get(PlantaActivityViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
+                MyViewModel vm = new ViewModelProvider(this).get(MyViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
 
+                List<MyItem> plantas = vm.getPlantas(); // Pega a lista de itens no viewmodel recebido
 
-                // Adiciona o item criado e preenchido na lista de receitas caso tenha sido escolhido anteriormanete como este
-                if(tipopost == "receita") {
-                    List<MyItem> receitas = vm.getReceitas(); // Pega a lista de itens no viewmodel recebido
+                plantas.add(newItem); // Adiciona na lista de itens o item criado anteriormente
 
-                    receitas.add(newItem); // Adiciona na lista de itens o item criado anteriormente
+                plantasMyAdapter.notifyDataSetChanged(); // Avisa que um novo item foi criado
 
-                    receitasMyAdapter.notifyItemInserted(receitas.size() - 1); // Avisa que um novo item foi criado
-                }
-
-                // Mesma coisa acima mas para estruturas químicas
-                if(tipopost == "estrutura química") {
-                    List<MyItem> estruturasquimicas = vm.getEstruturas_quimicas(); // Pega a lista de itens no viewmodel recebido
-
-                    estruturasquimicas.add(newItem); // Adiciona na lista de itens o item criado anteriormente
-
-                    estruturasQuimicasMyAdapter.notifyItemInserted(estruturasquimicas.size() - 1); // Avisa que um novo item foi criado
-                }
-
-                // Mesma coisa acima mas para modos de plantio
-                if(tipopost == "modo plantio") {
-                    List<MyItem> modosplantio = vm.getModos_plantio(); // Pega a lista de itens no viewmodel recebido
-
-                    modosplantio.add(newItem); // Adiciona na lista de itens o item criado anteriormente
-
-                    modosPlantioMyAdapter.notifyItemInserted(modosplantio.size() - 1); // Avisa que um novo item foi criado
-                }
             }
         }
-    }
+    } */
 
     // Configura a atividade que inicia antes que o usuário comece a mexer
     @Override

@@ -17,6 +17,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.content.Context;
+import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -32,6 +34,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        /*
+        if(Config.getLogin(MainActivity.this).isEmpty()) {
+            Intent i = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(i);
+            finish();
+        }
+        else {
+            finish();
+        }*/
+
         setContentView(R.layout.activity_main);
 
         // Pega a toolbar da interface usando seu ID e define ele como a barra da atividade
@@ -43,16 +56,26 @@ public class MainActivity extends AppCompatActivity {
         fabAdicionarPlanta.setOnClickListener(new View.OnClickListener() { // Define o que ocorre ao clicar no botão definido
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, AdicionarPlantaActivity.class); // Cria uma intenção onde o usuário vai do MainActivity até o NewItemActivity
+                Intent i = new Intent(MainActivity.this, AdicionarPostActivity.class); // Cria uma intenção onde o usuário vai do MainActivity até o NewItemActivity
                 startActivityForResult(i, NEW_ITEM_REQUEST); // Executa a intenção criada, para depois receber certo resultado, que será identificado pelo valor inteiro criado
             }
         });
 
-        MainActivityViewModel vm = new ViewModelProvider(this).get(MainActivityViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
+        MyViewModel vm = new ViewModelProvider(this).get(MyViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
 
-        List<MyItem> itens = vm.getItens(); // Pega a lista de itens no viewmodel recebido
+        List<MyItem> plantas = vm.getPlantas(); // Pega a lista de itens no viewmodel recebido
 
-        plantasMyAdapter = new PlantasMyAdapter(this, itens); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
+        plantasMyAdapter = new PlantasMyAdapter(this, plantas, new PlantasMyAdapter.ItemClickListener() {
+            @Override
+            public void onItemClick(MyItem item) {
+                //showToast(item.title + " Clicado!");
+                Intent i = new Intent(MainActivity.this, PlantaActivity.class);
+                // CÓDIGO PARA TRANSFERIR A FOTO
+                i.putExtra("title", item.title);
+                i.putExtra("description", item.description);
+                startActivity(i);
+            }
+        }); // Cria uma variável do tipo MyAdapter que recebe a lista de itens
 
         RecyclerView rvItens = findViewById(R.id.rvPlantas); // Define um recyclerview da interface através de seu id
         rvItens.setHasFixedSize(true); // Define que cada item da lista terá um tamanho igual (é algo que aumenta a velocidade)
@@ -62,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
         rvItens.setAdapter(plantasMyAdapter); // Define qual adapter que vai construir os itens da lista
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) { // Função que ocorre ao receber um resultado anterior que foi pedido
@@ -86,11 +111,11 @@ public class MainActivity extends AppCompatActivity {
                 newItem.description = description; // Define a descrição da foto do item criado anteriormente como a descrição definida aqui anteriormente
 
 
-                MainActivityViewModel vm = new ViewModelProvider(this).get(MainActivityViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
+                MyViewModel vm = new ViewModelProvider(this).get(MyViewModel.class); // Pega um viewmodel do mainactivityviewmodel para este main
 
-                List<MyItem> itens = vm.getItens(); // Pega a lista de itens no viewmodel recebido
+                List<MyItem> plantas = vm.getPlantas(); // Pega a lista de itens no viewmodel recebido
 
-                itens.add(newItem); // Adiciona na lista de itens o item criado anteriormente
+                plantas.add(newItem); // Adiciona na lista de itens o item criado anteriormente
 
                 plantasMyAdapter.notifyDataSetChanged(); // Avisa que um novo item foi criado
             }

@@ -8,7 +8,7 @@
     tools:context=".LoginActivity">
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/vLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -27,98 +27,94 @@
         android:id="@+id/tvEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/playfair_display"
-        android:text="Entrar"
+        android:text="@string/str_tv_btn_entrar"
         android:textColor="#000000"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etEmail2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintEnd_toEndOf="@+id/vLogin"
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toTopOf="@+id/vLogin" />
 
     <EditText
-        android:id="@+id/etEmail2"
+        android:id="@+id/etLoginEmail"
         android:layout_width="270dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/bg_textview"
         android:ems="10"
         android:fontFamily="@font/playfair_display"
-        android:hint="E-mail"
+        android:hint="@string/str_hint_email"
         android:inputType="textEmailAddress"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etPassword2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="@+id/view2" />
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntrar" />
 
     <EditText
-        android:id="@+id/etPassword2"
+        android:id="@+id/etLoginSenha"
         android:layout_width="270dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg_textview"
         android:ems="10"
         android:fontFamily="@font/playfair_display"
-        android:hint="Senha"
+        android:hint="@string/str_hint_senha"
         android:inputType="textPassword"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnEntrar2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/vLogin"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/view2" />
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginEmail" />
 
     <Button
-        android:id="@+id/btnEntrar2"
+        android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/bg_textview"
         android:fontFamily="@font/playfair_display"
-        android:text="Entrar"
+        android:text="@string/str_tv_btn_entrar"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2" />
+        app:layout_constraintBottom_toBottomOf="@+id/vLogin"
+        app:layout_constraintEnd_toEndOf="@+id/vLogin"
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginSenha" />
 
     <TextView
         android:id="@+id/tvNaoPossui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/playfair_display"
-        android:text="Não possui uma conta?"
+        android:text="@string/str_tv_nao_possui_conta"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintEnd_toStartOf="@+id/btnCadastro"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintTop_toBottomOf="@+id/vLogin" />
 
     <Button
-        android:id="@+id/tvRegistrar2"
+        android:id="@+id/btnCadastro"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/bg_textview"
         android:fontFamily="@font/playfair_display"
-        android:text="Registrar-se"
+        android:text="@string/str_tv_btn_registrar_se"
         android:textColor="#23259F"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toEndOf="@+id/tvNaoPossui"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/vLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,10 +16,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.PlantoterapiaApp" >
         <activity
-            android:name="com.example.plantoterapiaapp.AdicionarPlantaActivity"
+            android:name="com.example.plantoterapiaapp.ModosPlantioActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.plantoterapiaapp.EstruturasQuimicasActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.plantoterapiaapp.ReceitasActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.plantoterapiaapp.AdicionarPostActivity"
             android:exported="false" />
         <activity
             android:name="com.example.plantoterapiaapp.ConhecaProjetoActivity"

@@ -8,7 +8,7 @@
     tools:context=".CadastroActivity">
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/vCadastro"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -24,117 +24,115 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/etPasswordConf"
+        android:id="@+id/etCadastroSenhaConf"
         android:layout_width="270dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/bg_textview"
         android:ems="10"
         android:fontFamily="@font/playfair_display"
-        android:hint="Confirmar Senha"
+        android:hint="@string/str_hint_confirmar_senha"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/vCadastro"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/view" />
+        app:layout_constraintStart_toStartOf="@+id/vCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastroSenha" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etCadastroEmail"
         android:layout_width="270dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg_textview"
         android:ems="10"
         android:fontFamily="@font/playfair_display"
-        android:hint="E-mail"
+        android:hint="@string/str_hint_email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etPassword"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view" />
+        app:layout_constraintEnd_toEndOf="@+id/vCadastro"
+        app:layout_constraintStart_toStartOf="@+id/vCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegistrar" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etCadastroSenha"
         android:layout_width="270dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/bg_textview"
         android:ems="10"
         android:fontFamily="@font/playfair_display"
-        android:hint="Senha"
+        android:hint="@string/str_hint_senha"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etPasswordConf"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/vCadastro"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/view" />
+        app:layout_constraintStart_toStartOf="@+id/vCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastroEmail" />
 
     <TextView
         android:id="@+id/tvRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/playfair_display"
-        android:text="Registrar-se"
+        android:text="@string/str_tv_btn_registrar_se"
         android:textColor="#000000"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintEnd_toEndOf="@+id/vCadastro"
+        app:layout_constraintStart_toStartOf="@+id/vCadastro"
+        app:layout_constraintTop_toTopOf="@+id/vCadastro" />
 
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/bg_textview"
         android:fontFamily="@font/playfair_display"
-        android:text="Registrar-se"
+        android:text="@string/str_tv_btn_registrar_se"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view" />
+        app:layout_constraintBottom_toBottomOf="@+id/vCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/vCadastro"
+        app:layout_constraintStart_toStartOf="@+id/vCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastroSenhaConf" />
 
     <TextView
         android:id="@+id/tvPossui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/playfair_display"
-        android:text="Já possui uma conta?"
+        android:text="@string/str_tv_possui_conta"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/vCadastro" />
 
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/bg_textview"
         android:fontFamily="@font/playfair_display"
-        android:text="Entrar"
+        android:text="@string/str_tv_btn_entrar"
         android:textAllCaps="false"
         android:textColor="#23259F"
         android:textSize="14sp"
@@ -144,7 +142,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toEndOf="@+id/tvPossui"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/vCadastro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

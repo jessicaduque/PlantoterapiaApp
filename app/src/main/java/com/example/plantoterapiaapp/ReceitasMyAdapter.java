@@ -13,11 +13,11 @@ import java.util.List;
 
 public class ReceitasMyAdapter extends RecyclerView.Adapter {
     //Responsável por construir e preencher a lista
-    PlantaActivity plantaActivity;
+    ReceitasActivity receitasActivity;
     List<MyItem> receitas;
 
-    public ReceitasMyAdapter(PlantaActivity plantaActivity, List<MyItem> receitas){
-        this.plantaActivity = plantaActivity;
+    public ReceitasMyAdapter(ReceitasActivity receitasActivity, List<MyItem> receitas){
+        this.receitasActivity = receitasActivity;
         this.receitas = receitas;
     }
 
@@ -25,7 +25,7 @@ public class ReceitasMyAdapter extends RecyclerView.Adapter {
     //Cria a visualização do item
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(plantaActivity);
+        LayoutInflater inflater = LayoutInflater.from(receitasActivity);
         //Constroi uma view baseada em um arquivo de regra (item_list.xml)
         View v = inflater.inflate(R.layout.receitas_list, parent, false);
 

@@ -13,11 +13,11 @@ import java.util.List;
 
 public class ModosPlantioMyAdapter extends RecyclerView.Adapter {
     //Responsável por construir e preencher a lista
-    PlantaActivity plantaActivity;
+    ModosPlantioActivity modosPlantioActivity;
     List<MyItem> modos_plantio;
 
-    public ModosPlantioMyAdapter(PlantaActivity plantaActivity, List<MyItem> modos_plantio){
-        this.plantaActivity = plantaActivity;
+    public ModosPlantioMyAdapter(ModosPlantioActivity modosPlantioActivity, List<MyItem> modos_plantio){
+        this.modosPlantioActivity = modosPlantioActivity;
         this.modos_plantio = modos_plantio;
     }
 
@@ -25,7 +25,7 @@ public class ModosPlantioMyAdapter extends RecyclerView.Adapter {
     //Cria a visualização do item
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(plantaActivity);
+        LayoutInflater inflater = LayoutInflater.from(modosPlantioActivity);
         //Constroi uma view baseada em um arquivo de regra (item_list.xml)
         View v = inflater.inflate(R.layout.modos_plantio_list, parent, false);
 
@@ -39,7 +39,7 @@ public class ModosPlantioMyAdapter extends RecyclerView.Adapter {
         ImageView imvPhoto = v.findViewById(R.id.imvModoPlantioFoto);
         imvPhoto.setImageBitmap(myItem.photo);
 
-        TextView tvTitle = v.findViewById(R.id.tvEstruturaQuimicaTitulo);
+        TextView tvTitle = v.findViewById(R.id.tvModoPlantioTitulo);
         tvTitle.setText(myItem.title);
 
         TextView tvDescription = v.findViewById(R.id.tvModoPlantioDescricao);

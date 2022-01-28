@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdicionarPlantaActivity">
+    android:background="#B6F1CE"
+    tools:context=".AdicionarPostActivity">
 
     <ImageView
         android:id="@+id/imvPhotoPreviewPlanta"
@@ -16,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_photo_24"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
@@ -37,6 +39,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/white_background"
         android:ems="10"
         android:hint="@string/str_hint_titulo"
         android:inputType="textPersonName"
@@ -52,6 +55,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/white_background"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/str_hint_descricao"

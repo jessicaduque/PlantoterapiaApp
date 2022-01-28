@@ -21,50 +21,13 @@
         android:id="@+id/btnModoPlantio"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/button_rounded"
         android:clickable="true"
         android:fontFamily="@font/playfair_display"
         android:text="Modo de Plantio"
         android:textStyle="bold"
         app:iconTint="#F78DAA"
-        app:layout_constraintEnd_toStartOf="@+id/btnEstrutQuim"
-        app:layout_constraintStart_toEndOf="@+id/btnReceita"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnReceita"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/button_rounded"
-        android:clickable="true"
-        android:fontFamily="@font/playfair_display"
-        android:text="Receita"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btnModoPlantio"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnEstrutQuim"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/button_rounded"
-        android:clickable="true"
-        android:fontFamily="@font/playfair_display"
-        android:text="Estrutura Química"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnModoPlantio"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText

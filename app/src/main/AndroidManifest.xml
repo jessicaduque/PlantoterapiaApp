@@ -11,7 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantoterapiaApp">
         <activity
-            android:name=".AdicionarPlantaActivity"
+            android:name=".ModosPlantioActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EstruturasQuimicasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReceitasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdicionarPostActivity"
             android:exported="false" />
         <activity
             android:name=".ConhecaProjetoActivity"

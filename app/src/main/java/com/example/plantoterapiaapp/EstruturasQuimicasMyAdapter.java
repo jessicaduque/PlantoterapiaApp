@@ -13,11 +13,11 @@ import java.util.List;
 
 public class EstruturasQuimicasMyAdapter extends RecyclerView.Adapter {
     //Responsável por construir e preencher a lista
-    PlantaActivity plantaActivity;
+    EstruturasQuimicasActivity estruturasQuimicasActivity;
     List<MyItem> estruturas_quimicas;
 
-    public EstruturasQuimicasMyAdapter(PlantaActivity plantaActivity, List<MyItem> estruturas_quimicas){
-        this.plantaActivity = plantaActivity;
+    public EstruturasQuimicasMyAdapter(EstruturasQuimicasActivity estruturasQuimicasActivity, List<MyItem> estruturas_quimicas){
+        this.estruturasQuimicasActivity = estruturasQuimicasActivity;
         this.estruturas_quimicas = estruturas_quimicas;
     }
 
@@ -25,7 +25,7 @@ public class EstruturasQuimicasMyAdapter extends RecyclerView.Adapter {
     //Cria a visualização do item
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(plantaActivity);
+        LayoutInflater inflater = LayoutInflater.from(estruturasQuimicasActivity);
         //Constroi uma view baseada em um arquivo de regra (item_list.xml)
         View v = inflater.inflate(R.layout.estruturas_quimicas_list, parent, false);
 
@@ -44,7 +44,6 @@ public class EstruturasQuimicasMyAdapter extends RecyclerView.Adapter {
 
         TextView tvDescription = v.findViewById(R.id.tvEstruturaQuimicaDescricao);
         tvDescription.setText(myItem.description);
-
     }
 
     @Override

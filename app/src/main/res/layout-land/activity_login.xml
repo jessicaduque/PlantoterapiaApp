@@ -8,7 +8,7 @@
     tools:context=".LoginActivity">
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/vLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
@@ -27,22 +27,22 @@
         android:id="@+id/tvEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/playfair_display"
         android:text="Entrar"
         android:textColor="#000000"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etEmail2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/vLogin"
         app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toTopOf="@+id/vLogin" />
 
     <EditText
-        android:id="@+id/etEmail2"
+        android:id="@+id/etLoginEmail"
         android:layout_width="270dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/bg_textview"
         android:ems="10"
         android:fontFamily="@font/playfair_display"
@@ -50,15 +50,15 @@
         android:inputType="textEmailAddress"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etPassword2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2" />
+        app:layout_constraintEnd_toEndOf="@+id/vLogin"
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntrar" />
 
     <EditText
-        android:id="@+id/etPassword2"
+        android:id="@+id/etLoginSenha"
         android:layout_width="270dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bg_textview"
         android:ems="10"
         android:fontFamily="@font/playfair_display"
@@ -66,24 +66,25 @@
         android:inputType="textPassword"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnEntrar2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2" />
+        app:layout_constraintEnd_toEndOf="@+id/vLogin"
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginEmail" />
 
     <Button
-        android:id="@+id/btnEntrar2"
+        android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/bg_textview"
         android:fontFamily="@font/playfair_display"
         android:text="Entrar"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2" />
+        app:layout_constraintBottom_toBottomOf="@+id/vLogin"
+        app:layout_constraintEnd_toEndOf="@+id/vLogin"
+        app:layout_constraintStart_toStartOf="@+id/vLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginSenha" />
 
     <TextView
         android:id="@+id/tvNaoPossui"
@@ -96,12 +97,12 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvRegistrar2"
+        app:layout_constraintEnd_toStartOf="@+id/btnCadastro"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/vLogin" />
 
     <Button
-        android:id="@+id/tvRegistrar2"
+        android:id="@+id/btnCadastro"
         android:layout_width="158dp"
         android:layout_height="40dp"
         android:layout_marginEnd="100dp"
@@ -113,5 +114,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvNaoPossui"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/vLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

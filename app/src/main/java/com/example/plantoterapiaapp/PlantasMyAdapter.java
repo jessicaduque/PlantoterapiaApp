@@ -2,6 +2,7 @@ package com.example.plantoterapiaapp;
 
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,10 +17,13 @@ public class PlantasMyAdapter extends RecyclerView.Adapter {
     //Responsável por construir e preencher a lista
     MainActivity mainActivity;
     List<MyItem> itens;
+    ItemClickListener mItemListener;
 
-    public PlantasMyAdapter(MainActivity mainActivity, List<MyItem> itens){
+
+    public PlantasMyAdapter(MainActivity mainActivity, List<MyItem> itens, ItemClickListener itemClickListener){
         this.mainActivity = mainActivity;
         this.itens = itens;
+        this.mItemListener = itemClickListener;
     }
 
 
@@ -43,10 +47,20 @@ public class PlantasMyAdapter extends RecyclerView.Adapter {
 
         TextView tvTitle = v.findViewById(R.id.tvPlantaTitulo);
         tvTitle.setText(myItem.title);
+
+        holder.itemView.setOnClickListener(view -> {
+            mItemListener.onItemClick(itens.get(position));
+        });
+
     }
 
     @Override
     public int getItemCount() {
         return itens.size();
     }
+
+    public  interface ItemClickListener{
+        void onItemClick(MyItem item);
+    }
 }
+
